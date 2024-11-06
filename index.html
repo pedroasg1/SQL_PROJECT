@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tables">
+
+      <div class="tables1">
+        <div class="tablaAlumno">
+        <h1>Tabla Alumnos</h1>
+        <form action="alumno.php" method="post">
+            <table border="1" solid blue>
+                <tr><td>ID Alumno:</td>
+                    <td><input type="number" name="id"/></td>
+                </tr>
+                <tr>
+                    <td>Nombre: </td>
+                    <td><input type="text" name="nombre"/></td>
+                </tr>
+                <tr>
+                    <td>Edad: </td>
+                    <td><input type="number" name="edad"/></td>
+                </tr>
+                <tr>
+                    <td>Direccion: </td>
+                    <td><input type="text" name="direccion"/></td>
+                </tr>
+                <tr>
+                    <td>Fecha de Registro: </td>
+                    <td><input type="text" name="fecha_registro"/></td>
+                </tr>
+                <tr><td colspan="2"><input type="submit" value="Guardar"/></td>
+                </tr>
+            </table>
+        </form>
+                <form action="alumnoBorrar.php" method="post">
+                    <table border="1">
+                        <tr>
+                            <td>
+                    <label for="id">ID del Alumno a Eliminar:</label>
+                    <input type="text" id="id" name="id" required>
+                    <input type="submit" value="Eliminar">
+                        </td>
+                </tr>
+                </table>
+                </form>
+    </div>
+            <h1>Tabla Maestros</h1>
+            <form action="maestro.php" method="post">
+                <table border="1" solid blue>
+                    <tr><td>ID Maestro:</td>
+                        <td><input type="number" name="id"/></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td><input type="text" name="nombre"/></td>
+                    </tr>
+                    <tr>
+                        <td>Especialidad: </td>
+                        <td><input type="text" name="especialidad"/></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="email" name="email"/></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono: </td>
+                        <td><input type="number" name="telefono"/></td>
+                    </tr>
+                    <tr><td colspan="2"><input type="submit" value="Guardar"/></td>
+                    </tr>
+                </table>
+            </form>
+            <form action="alumnoBorrar.php" method="post">
+                <table border="1">
+                    <tr>
+                        <td>
+                <label for="id">ID del Maestro a Eliminar:</label>
+                <input type="text" id="id" name="id" required>
+                <input type="submit" value="Eliminar">
+                    </td>
+            </tr>
+            </table>
+            </form>
+        </div>
+        <div class="tables2">
+                <h1>Tabla Kardex</h1>
+                <form action="kardex.php" method="post">
+                    <table border="1" solid blue>
+                        <tr><td>ID Kardex:</td>
+                            <td><input type="number" name="id"/></td>
+                        </tr>
+                        <tr>
+                            <td>ID Alumno: </td>
+                            <td><input type="number" name="id_alumno"/></td>
+                        </tr>
+                        <tr>
+                            <td>Curso: </td>
+                            <td><input type="text" name="curso"/></td>
+                        </tr>
+                        <tr>
+                            <td>Calificacion: </td>
+                            <td><input type="number" name="calificacion"/></td>
+                        </tr>
+                        <tr>
+                            <td>Fecha: </td>
+                            <td><input type="date" name="fecha"/></td>
+                        </tr>
+                        <tr><td colspan="2"><input type="submit" value="Guardar"/></td>
+                        </tr>
+                    </table>
+                </form>
+            <form action="alumnoBorrar.php" method="post">
+                <table border="1">
+                    <tr>
+                        <td>
+                <label for="id">ID del Kardex a Eliminar:</label>
+                <input type="text" id="id" name="id" required>
+                <input type="submit" value="Eliminar">
+                    </td>
+            </tr>
+            </table>
+            </form>
+                    <h1>Tabla Colegiatura</h1>
+                    <form action="colegiatura.php" method="post">
+                        <table border="1" solid blue>
+                            <tr><td>ID Colegiatura:</td>
+                                <td><input type="number" name="id"/></td>
+                            </tr>
+                            <tr>
+                                <td>ID Alumno: </td>
+                                <td><input type="number" name="id_alumno"/></td>
+                            </tr>
+                            <tr>
+                                <td>Monto: </td>
+                                <td><input type="text" name="monto"/></td>
+                            </tr>
+                            <tr>
+                                <td>Fecha de pago: </td>
+                                <td><input type="date" name="fecha_pago"/></td>
+                            </tr>
+                            <tr>
+                                <td>Estatus: </td>
+                                <td><input type="text" name="estatus"/></td>
+                            </tr>
+                            <tr><td colspan="2"><input type="submit" value="Guardar"/></td>
+                            </tr>
+                        </table>
+                    </form>
+            <form action="alumnoBorrar.php" method="post">
+                <table border="1">
+                    <tr>
+                        <td>
+                <label for="id">ID de la Colegiatura a Eliminar:</label>
+                <input type="text" id="id" name="id" required>
+                <input type="submit" value="Eliminar">
+                    </td>
+            </tr>
+            </table>
+            </form>     
+                </div>
+                </div>
+            </div>
+</body>
+</html>
